@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Tracker</title>
+
+    <!-- path to style -->
+    <link rel="stylesheet" href="/OOP + DOM/workout-tracker.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header></header>
+    <main class="content-container">
+      <div class="input-container">
+        <input
+          id="inputExercise"
+          type="text"
+          placeholder="Input Exercise Name"
+        />
+        <input id="inputReps" type="number" placeholder="Input Reps" />
+        <input id="inputSets" type="number" placeholder="Input Sets" />
+        <button id="addBtn">Add Workout</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Reps</th>
+            <th>Sets</th>
+            <th>Total Reps</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="showList"></tbody>
+      </table>
+
+      <p id="showTotal">Total Reps: 0</p>
+    </main>
+
+    <!-- path to js -->
+    <script src="/OOP + DOM/workout-tracker.js"></script>
+  </body>
+</html>

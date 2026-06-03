@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="text" id="inputText" placeholder="Type anything">
+  <button id="btnSave">Save</button>
+
+  <script>
+    const inputText = document.getElementById('inputText');
+    const btnSave = document.getElementById('btnSave');
+
+    let container = JSON.parse(localStorage.getItem('container')) || [];
+
+    load();
+
+    btnSave.addEventListener('click', saveDB);
+
+    function saveDB() {
+
+      container.push(inputText.value);
+      saveStorage();
+      inputText.value = '';
+
+    }
+
+    function saveStorage() {
+
+      localStorage.setItem('container', JSON.stringify(container));
+
+    }
+
+    function load() {
+      container.forEach(item => {
+        const p = document.createElement('p');
+        p.textContent = item;
+        document.body.appendChild(p);
+      });
+    }
+
+
+  </script>
+</body>
+</html>
