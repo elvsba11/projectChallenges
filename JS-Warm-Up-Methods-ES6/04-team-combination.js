@@ -26,9 +26,9 @@ function isSenior() {
 console.log(isSenior());
 
 // 3. reduce + Destructuring
-console.log("======Overall Experience=====\n");
+console.log("======Total Team Experience=====\n");
 function totalExp() {
   return developers.reduce((sum, { experience }) => sum + experience, 0);
 }
 
-console.log(totalExp());
+console.log("Total Years of Experience:", totalExp());
