@@ -58,11 +58,9 @@ console.log(shippingFee);
 
 //3. reduce + Destructuring
 console.log("\n=======Total Revenue=======\n");
+//filter status = delivered
 const orderDelivered = sales.filter(({ status }) => status === "Delivered");
-
-// function totalRevenue() {
-//   return orderDelivered.reduce((sum, { total }) => sum + total, 0);
-// }
+// add all filtered status = delivered
 const total = orderDelivered.reduce((sum, { total }) => sum + total, 0);
 
 console.log(total);
