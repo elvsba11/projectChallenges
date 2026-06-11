@@ -1,0 +1,31 @@
+// Warm up 9 — Git & GitHub Basics:
+
+// Ipagpalagay na nakabukas ang Terminal o Command Prompt mo sa loob ng iyong JS folder.
+// Isulat ang tamang Git command para sa mga sumusunod —
+
+// 1. Git Initialization — Paano mo sisimulan ang paggawang "Git Repository" ang folder mo para simulan nitong bantayan ang mga files mo?
+//    HINT: Gagamit ka ng command na may salitang `init`.
+
+git init
+// 2. Staging Files — Paano mo ihahanda o "i-e-envelop" ang LAHAT ng 11 files mo para handa na silang i-save?
+//    HINT: Gagamit ka ng command na `add` na may kasunod na dot `.` (na ang ibig sabihin ay ALL).
+
+git add .
+
+// 3. Committing Changes — Paano mo opisyal na isasarado o i-se-save ang envelop na may kasamang mensahe na "First commit ng aking JS practice"?
+//    HINT: Gagamit ka ng command na `commit` na may flag na `-m` para sa message.
+
+git commit -m 'Initial Commit'
+
+
+// 4. Connecting to Cloud — Paano mo ikakabit ang local Git mo sa ginawa mong lalagyan sa GitHub gamit ang URL na: https://github.com/username/js-practice.git
+//    HINT: Gagamit ka ng command na `remote add origin [URL]`.
+
+git remote add origin https://github.com/username/js-practice.git // confidential akya hindi ko naliagay link ko
+
+// 5. Pushing Online — Paano mo tuluyang isasampa o itutulak ang iyong code paakyat sa GitHub sa iyong "main" branch?
+//    HINT: Gagamit ka ng command na `push` na may flag na `-u origin main`.
+
+git push -u origin main
+
+// Go — wala na akong hint! 💪😄
